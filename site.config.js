@@ -1,13 +1,13 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "uiw6unoh",
-    image: "/avatar.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "backend developer",
-    bio: "I develop everything using java.",
-    email: "uiw6unoh@naver.com",
-    linkedin: "uiw6unoh",
-    github: "uiw6unoh",
+    name: "morethanmin",
+    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    role: "frontend developer",
+    bio: "I develop everything using node.",
+    email: "morethanmin.dev@gmail.com",
+    linkedin: "morethanmin",
+    github: "morethanmin",
     instagram: "",
   },
   projects: [
@@ -18,37 +18,37 @@ const CONFIG = {
   ],
   // blog setting (required)
   blog: {
-    title: "Lijourney",
-    description: "welcome to lijun's blog!",
+    title: "morethan-log",
+    description: "welcome to morethan-log!",
+    scheme: "dark", // 'light' | 'dark' | 'system'
   },
 
   // CONFIG configration (required)
-  link: "https://lijourney.vercel.app",
-  since: 2024, // If leave this empty, current year will be used.
+  link: "https://morethan-log.vercel.app",
+  since: 2022, // If leave this empty, current year will be used.
   lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
 
   // notion configuration (required)
   notionConfig: {
-    // pageId: process.env.NOTION_PAGE_ID,
-    pageId: "609547dc18b740279c03b035f9476dff",
+    pageId: process.env.NOTION_PAGE_ID,
   },
 
   // plugin configuration (optional)
   googleAnalytics: {
-    enable: true,
+    enable: false,
     config: {
       measurementId: process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID || "",
     },
   },
   googleSearchConsole: {
-    enable: true,
+    enable: false,
     config: {
       siteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
     },
   },
   naverSearchAdvisor: {
-    enable: true,
+    enable: false,
     config: {
       siteVerification: process.env.NEXT_PUBLIC_NAVER_SITE_VERIFICATION || "",
     },
@@ -56,8 +56,7 @@ const CONFIG = {
   utterances: {
     enable: true,
     config: {
-      // repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "",
-      repo: "uiw6unoh/morethan-log-comments",
+      repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "",
       "issue-term": "og:title",
       label: "💬 Utterances",
     },
@@ -70,7 +69,7 @@ const CONFIG = {
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  revalidateTime: 10 * 6, // revalidate time for [slug], index
+  revalidateTime: 21600 * 7, // revalidate time for [slug], index
 }
 
 module.exports = { CONFIG }
