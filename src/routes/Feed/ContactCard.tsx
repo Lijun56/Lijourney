@@ -1,20 +1,17 @@
-import styled from "@emotion/styled"
+import { CONFIG } from "site.config"
 import React from "react"
 import {
-  AiFillLinkedin,
-  AiOutlineGithub,
   AiOutlineInstagram,
+  AiOutlineGithub,
   AiOutlineMail,
+  AiFillLinkedin,
 } from "react-icons/ai"
-import { CONFIG } from "site.config"
-import { Emoji } from "src/components/Emoji"
+import styled from "@emotion/styled"
 
 const ContactCard: React.FC = () => {
   return (
     <>
-      <StyledTitle>
-        <Emoji>💬</Emoji> Contact
-      </StyledTitle>
+      <StyledTitle>💬 Contact</StyledTitle>
       <StyledWrapper>
         {CONFIG.profile.github && (
           <a
