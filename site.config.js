@@ -1,31 +1,32 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "uiw6unoh",
+    name: "lijun",
     image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "backend developer",
     bio: "I develop everything using java.",
-    email: "uiw6unoh@naver.com",
-    linkedin: "uiw6unoh",
-    github: "uiw6unoh",
+    email: "lijun56@naver.com",
+    linkedin: "zlijun",
+    github: "lijun56",
     instagram: "",
   },
   projects: [
     {
-      name: `morethan-log`,
-      href: "https://github.com/morethanmin/morethan-log",
+      name: `lijourney`,
+      href: "https://github.com/morethanmin/lijourney",
     },
   ],
   // blog setting (required)
   blog: {
-    title: "uiw6unoh-log",
-    description: "welcome to uiw6unoh-log!",
+    title: "lijourney",
+    description: "welcome to lijourney!",
+    scheme: "system", // 'light' | 'dark' | 'system'
   },
 
   // CONFIG configration (required)
-  link: "https://uiw6unoh-log.vercel.app",
+  link: "https://lijourney.vercel.app",
   since: 2024, // If leave this empty, current year will be used.
-  lang: "ko-KR", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
+  lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
 
   // notion configuration (required)
@@ -56,7 +57,7 @@ const CONFIG = {
     enable: true,
     config: {
       // repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "",
-      repo: "uiw6unoh/morethan-log-comments",
+      repo: "lijun56/lijourney-comments",
       "issue-term": "og:title",
       label: "💬 Utterances",
     },
