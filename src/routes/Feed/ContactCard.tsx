@@ -1,4 +1,5 @@
 import { CONFIG } from "site.config"
+import { Emoji } from "src/components/Emoji"
 import React from "react"
 import {
   AiOutlineInstagram,
@@ -11,7 +12,9 @@ import styled from "@emotion/styled"
 const ContactCard: React.FC = () => {
   return (
     <>
-      <StyledTitle>💬 Contact</StyledTitle>
+      <StyledTitle>
+        <Emoji>💬</Emoji> Contact
+      </StyledTitle>
       <StyledWrapper>
         {CONFIG.profile.github && (
           <a
@@ -21,16 +24,6 @@ const ContactCard: React.FC = () => {
           >
             <AiOutlineGithub className="icon" />
             <div className="name">github</div>
-          </a>
-        )}
-        {CONFIG.profile.instagram && (
-          <a
-            href={`https://www.instagram.com/${CONFIG.profile.instagram}`}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiOutlineInstagram className="icon" />
-            <div className="name">instagram</div>
           </a>
         )}
         {CONFIG.profile.email && (
@@ -71,7 +64,7 @@ const StyledWrapper = styled.div`
   flex-direction: column;
   border-radius: 1rem;
   background-color: ${({ theme }) =>
-    theme.scheme === "light" ? "white" : theme.colors.gray4};
+    theme.scheme === "light" ? "white" : "rgb(63 63 70)"};
   a {
     display: flex;
     padding: 0.75rem;

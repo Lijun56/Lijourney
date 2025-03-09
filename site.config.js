@@ -20,7 +20,6 @@ const CONFIG = {
   blog: {
     title: "lijourney",
     description: "welcome to lijourney!",
-    scheme: "system", // 'light' | 'dark' | 'system'
   },
 
   // CONFIG configration (required)
@@ -33,6 +32,7 @@ const CONFIG = {
   notionConfig: {
     pageId: process.env.NOTION_PAGE_ID,
   },
+
 
   // plugin configuration (optional)
   googleAnalytics: {
@@ -48,7 +48,7 @@ const CONFIG = {
     },
   },
   naverSearchAdvisor: {
-    enable: false,
+    enable: true,
     config: {
       siteVerification: process.env.NEXT_PUBLIC_NAVER_SITE_VERIFICATION || "",
     },
@@ -57,7 +57,7 @@ const CONFIG = {
     enable: true,
     config: {
       // repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "",
-      repo: "lijun56/lijourney-comments",
+      repo: "lijun56/lijourney",
       "issue-term": "og:title",
       label: "💬 Utterances",
     },
@@ -70,7 +70,7 @@ const CONFIG = {
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  revalidateTime: 21600 * 7, // revalidate time for [slug], index
+  revalidateTime: 10 * 6, // revalidate time for [slug], index
 }
 
 module.exports = { CONFIG }
