@@ -2,10 +2,11 @@ const CONFIG = {
   // profile setting (required)
   profile: {
     name: "lijun",
-    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "backend developer",
-    bio: "I develop everything using java.",
-    email: "lijun56@naver.com",
+    // image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: "", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    role: " ",
+    bio: "Backend Engineer, ML Engineer, fitness enthusiast, Life-long Learner, Investor",
+    email: "zlijun@gmail.com",
     linkedin: "zlijun",
     github: "lijun56",
     instagram: "",
@@ -13,13 +14,13 @@ const CONFIG = {
   projects: [
     {
       name: `lijourney`,
-      href: "https://github.com/morethanmin/lijourney",
+      href: "https://github.com/lijun56s/lijourney",
     },
   ],
   // blog setting (required)
   blog: {
     title: "lijourney",
-    description: "welcome to lijourney!",
+    description: "where lijun shares his thoughts",
   },
 
   // CONFIG configration (required)
